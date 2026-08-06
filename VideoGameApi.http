@@ -1,6 +1,42 @@
 @VideoGameApi_HostAddress = http://localhost:5139
 
-GET {{VideoGameApi_HostAddress}}/weatherforecast/
+### Get all video games
+GET {{VideoGameApi_HostAddress}}/api/VideoGame
 Accept: application/json
 
 ###
+
+### Get video game by id
+GET {{VideoGameApi_HostAddress}}/api/VideoGame/1
+Accept: application/json
+
+###
+
+### Create video game
+POST {{VideoGameApi_HostAddress}}/api/VideoGame
+Content-Type: application/json
+
+{
+  "title": "God of War Ragnarök",
+  "platform": "PS5",
+  "developer": "Santa Monica Studio",
+  "publisher": "Sony Interactive Entertainment"
+}
+
+###
+
+### Update video game
+PUT {{VideoGameApi_HostAddress}}/api/VideoGame/1
+Content-Type: application/json
+
+{
+  "title": "Spider-Man 2 Remastered",
+  "platform": "PS5",
+  "developer": "Insomniac Games",
+  "publisher": "Sony Interactive Entertainment"
+}
+
+###
+
+### Delete video game
+DELETE {{VideoGameApi_HostAddress}}/api/VideoGame/3
