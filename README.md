@@ -2,6 +2,8 @@
 
 ASP.NET Core Web API (.NET 9) for managing video games. Data is persisted in **SQL Server** with **Entity Framework Core** (code-first migrations and seed data).
 
+**Learning guide:** [CONCEPTS.md](CONCEPTS.md) — explanations of every C#, .NET, and EF Core concept used in this project, with a senior-developer revisit section and study checklist.
+
 ## What we built
 
 1. **`VideoGame` model** — `Id`, `Title`, `Platform`, `Developer`, `Publisher`
@@ -122,7 +124,8 @@ VideoGameApi/
 ├── appsettings.json             # SQL Server connection string
 ├── VideoGameApi.http            # Sample HTTP requests
 ├── .gitignore
-└── README.md
+├── README.md
+└── CONCEPTS.md                 # Study guide for concepts used in this project
 ```
 
 ## Notes
